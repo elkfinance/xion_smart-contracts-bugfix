@@ -113,7 +113,7 @@ contract XGWallet is OwnableUpgradeable, PausableUpgradeable {
             "Can't have a fee over more than 100%"
         );
         DEPOSIT_FEE_IN_BP = _depositFeeBP;
-        DEPOSIT_FEE_IN_BP = _withdrawFeeBP;
+        WITHDRAW_FEE_IN_BP = _withdrawFeeBP;
     }
 
     function setFeeWallet(address _feeWallet) external onlyHub {
